@@ -1,0 +1,43 @@
+.bs-od-ps section{
+	width:50%;
+	height:380px;
+	margin:0 auto;
+	padding-top:80px;
+	box-sizing:border-box;
+	text-align: center;
+}
+@media (min-width:580px){
+	.bs-od-ps{
+		background:url("../img/pay/success.png") no-repeat center 220px;
+		background-size:7%;
+	}
+}
+@media (min-width:1px) AND (max-width:320px){
+	.bs-od-ps{
+		width:320px;
+	}
+}
+.bs-od-ps h2{
+	font:30px 'microsoft yahei';
+	color:#333;
+	margin-bottom:20px;
+}
+.bs-od-ps p{
+	margin-bottom:20px;
+	font-size:16px;
+}
+.bs-od-ps p b{
+	color:#fe3227;
+}
+.bs-od-ps p span{
+	padding-right:10%;
+}
+.bs-od-ps p a{
+	color:#3ab572;
+	padding-right:10%;
+	line-height:24px;
+}
+.bs-od-ps p a:hover{
+	color:#fe3227;
+	text-decoration:none;
+}

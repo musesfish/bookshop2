@@ -1,0 +1,152 @@
+/*主体*/
+	.bs-lg .container{
+		box-sizing: border-box;
+		display:flex;
+		/*justify-content:space-between;*/
+		margin:40px auto;
+		/*border:1px solid red;*/
+	}
+/*左侧边*/
+	.bs-lg .container .lside a.logo img{
+		width:90px;
+		padding-left:30px;
+	}
+	.bs-lg .container .lside a.ad img{
+		width:600px;
+		margin-right:90px;
+	}
+/*右侧边*/
+	
+	/*登录*/
+@media (min-width: 1px) {
+		.bs-lg .container .rside{
+			margin-left:-60px;
+		}
+		.bs-lg #login{
+			max-width:281px;
+			min-width:257px;
+			/*width:281px;*/
+			/*width:100%;*/
+			min-height:316px;
+			margin:122px auto 0;
+			padding:10px;
+			border:1px solid #c8c3c3;
+			display:flex;
+			flex-direction:column;
+			justify-content:space-between;
+			/*border:1px solid red;*/
+		}
+}
+@media (min-width: 500px) {
+		.bs-lg .container .rside{
+			width:450px;
+			/*border:1px solid green;*/
+		}
+}
+@media (min-width: 768px) {
+		.bs-lg #login{
+			/*width:281px;*/
+			/*width:100%;*/
+			max-width:281px;
+			min-width:257px;
+			min-height:316px;
+			padding:30px;
+			margin:122px auto;
+			border:1px solid #c8c3c3;
+			display:flex;
+			flex-direction:column;
+			justify-content:space-between;
+			/*border:1px solid red;*/
+		}
+}
+        .bs-lg #login p.logtitle{
+            margin-bottom: 10px;
+        }
+		.bs-lg #login p span{
+			font-size:17px;
+			/*font-weight:bold;*/
+		}
+		.bs-lg #login p a{
+			float:right;
+			padding-top:4px;
+		}
+		.bs-lg #login p.yhm,.bs-lg #login p.mm{
+			width:100%;
+			height:37px;
+			line-height:37px;
+			border:1px solid #c8c3c3;
+			margin-bottom:30px;
+		}
+		.bs-lg #login p.yhm{
+			background:#fff url("../img/login/yhm.png") no-repeat 97% center;
+		}
+		.bs-lg #login p.mm{
+			background:#fff url("../img/login/mm.png") no-repeat 97% center;
+		}
+		.bs-lg #login p.yhm span,.bs-lg #login p.mm span{
+			color:red;
+			font-size:12px;
+			visibility:hidden;
+			display:block;
+		}
+		.bs-lg #login #uname,.bs-lg #login #upwd{
+			margin-left:20px;
+			border:0;
+			outline:0;
+			/*background: #000;*/
+		}
+        /*//autocomplete="off"*/
+        .bs-lg input:-webkit-autofill{
+            -webkit-box-shadow: 0 0 0px 1000px white inset;
+        }
+		.bs-lg #login p.auto{
+			padding-bottom:12px;
+			margin-top:-5px;
+		}
+		.bs-lg #login p.auto input{
+			position:relative;
+			top:2px;
+		}
+		.bs-lg #login #btnlogin{
+			border-radius:2px;
+			color:white;
+			background-image:linear-gradient(to top,#f20b16,#ff2f2f);
+			width:100%;
+			height:37px;
+			border:0;
+			outline:0;
+			cursor:pointer;
+            margin-bottom: 10px;
+		}
+/*//验证码*/
+	.bs-lg #vcode{
+		margin:20px 0;
+		min-height:40px;
+		/*border:1px solid red;*/
+	}
+	.bs-lg #vcode input{
+		max-width:80px;
+		height:33px;
+		line-height: 33px;
+		padding-left: 5px;
+		float: right;
+	}
+	.bs-lg #vcode img{
+		max-width:160px;
+		height:40px;
+		border:1px solid green;
+	}
+	.bs-lg #vcode a{
+		max-width:160px;
+		height:20px;
+		line-height: 20px;
+		text-align: center;
+		display: inline-block;
+        color:#333;
+		opacity: 0.8;
+        /*border: 1px solid red;*/
+	}
+	.bs-lg .hidden{
+		display: none;
+		/*display: block;*/
+	}

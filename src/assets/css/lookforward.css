@@ -1,0 +1,45 @@
+@keyframes slide-down-up{
+	0%{
+		top:0px;
+	}
+	40%{
+		top:66px;
+	}
+	60%{
+		top:100px;
+	}
+	80%{
+		top:66px;
+	}
+	100%{
+		top:100px;
+	}
+}
+@keyframes slide-down{
+	0%{
+		top:200px;
+	}
+	100%{
+		top:230px;
+	}
+}
+.bs-lf #section{
+	margin:0 auto;
+	width:300px;
+	height:300px;
+	position:relative;
+}
+.bs-lf #section p{
+	font-size:20px;
+	color:#CFCFCF;
+	position:absolute;
+	top:180px;
+	left:40px;
+	animation:slide-down 1s ease-in;
+}
+.bs-lf #section img{
+	animation:slide-down-up 1s ease-in;
+	position:absolute;
+	top:30px;
+	left:120px;
+}

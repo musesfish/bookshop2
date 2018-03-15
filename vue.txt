@@ -1,0 +1,60 @@
+0 （安装单文件组件，只需要一次）
+  npm install --global vue-cli
+  
+1 （每次创建项目都需要执行下面流程）
+  vue init webpack my-project (官方-（不推荐）代码语法检查比较麻烦)
+  cd my-project
+  vue init webpack-simple my-project (推荐)
+  cd my-project
+  
+2 使用  安装依赖  注意进入我们的项目
+  cd my-project
+  npm install  / cnpm install  (不带任何参数，这会安装 package.json 中记录的模块。)
+  
+2 npm run dev (运行项目)
+
+3 npm run build (生成项目 - dist)
+
+4 栗子
+
+   单文件配合vue-resource请求数据，通过  vue-router配置路由
+
+  1)进入项目目录   创建项目
+    vue init webpack-simple vuedemo
+  2）cd 进入刚刚创建的项目
+  3）npm  install  安装依赖
+  4)npm run dev 启动    
+   
+    单文件请求数据：
+
+  1）安装插件
+   npm install vue-resource --save-dev
+
+  2)main.js引入  
+
+   import VueResource from ‘vue-resource’
+
+  3)使用
+
+   main.js  中   Vue.use(VueResource)
+
+    单文件结合路由：
+
+  1)安装路由插件  npm install vue-router --save-dev
+
+  2)main.js引入  import VueRouter from ‘vue-router’
+  
+  3)使用 main.js  中   Vue.use(VueRouter)
+
+  resource：
+
+	var that=this;
+	var api='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+this.ipt;
+	this.$http.jsonp(api,{
+	    jsonp:'cb'
+	}).then(function(data){
+	console.log(data)
+	   that.list=data.body.s;
+	},function(){
+	
+	})

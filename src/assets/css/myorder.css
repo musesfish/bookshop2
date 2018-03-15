@@ -1,0 +1,130 @@
+
+/*头部*/
+	.bs-mo section div.head{
+		margin:20px 0;
+		height:20px;
+	}
+	.bs-mo section .head h2{
+		font-family:'microsoft yahei';
+		color:#000;
+		margin-top:-5px;
+	}
+	.bs-mo section .head p input{
+		width:180px;
+		height:20px;
+		padding-left:10px;
+		font-size:12px;
+		margin-right:5px;
+	}
+	.bs-mo section .head p button{
+		border:0;
+		outline:0;
+		background:#fe3227;
+		width:60px;
+		height:26px;
+		color:white;
+		border-radius:4px;
+		cursor:pointer;
+		position:relative;
+		top:2px;
+	}
+/*中部*/
+/*盒子头部*/
+	.bs-mo section .box .imfor-top{
+		display:flex;
+		justify-content:space-between;
+		background-image:linear-gradient(to top,#E7E7E6 0%,#F4F3F4 100%);
+		height:37px;
+		line-height:37px;
+		border-top:1px solid silver;
+		box-shadow:0 3px 3px #ddd;
+		margin-bottom:20px;
+		font-weight:normal;
+	}
+	.bs-mo section .imfor-top p{
+		text-align:center;
+	}
+	.bs-mo section .imfor-top p:nth-child(2){
+		width:35%;
+	}
+	.bs-mo section .imfor-top p{
+		width:13%;
+	}
+	.bs-mo #time,.bs-mo #state{
+		font-size:12px;
+		height:24px;
+		position:relative;
+		top:2px;
+	}
+	@media (min-width:0) AND (max-width:768px){
+		.bs-mo section .imfor-top p{
+			width:25%!important;
+		}
+		.bs-mo section .imfor>div{
+			width:25%!important;
+			padding-left:8px!important;
+			margin:0 5px!important;
+		}
+		.bs-mo section .imfor>div.product img{
+			width:100%!important;
+			position:relative;
+			top:-10px;
+		}
+	}
+/*盒子主体*/
+	.bs-mo section .box .imfor{
+		display:flex;
+		justify-content:space-between;
+		box-sizing:border-box;
+		background:#fff;
+		font-weight:normal;
+		margin-bottom:14px;
+		border-bottom:1px solid #ddd;
+	}
+	.bs-mo section .imfor>div{
+		text-align:center;
+        padding-top:20px;
+	}
+	.bs-mo section .imfor>div:hover{
+		background:#EEF6FF;
+	}
+	.bs-mo section .box .imfor .product{
+		width:35%;
+		padding-left:20px;
+	}
+	.bs-mo section .box .imfor div{
+		width:13%;
+	}
+	/*第1,7列*/
+	.bs-mo section .box div.manipulate a{
+		color:#0AA1ED;
+        display:block;
+        margin:10px 0;
+	}
+	/*第2列*/
+	.bs-mo section .box .imfor .product div{
+		width:90%;
+		text-align:left;
+		margin:5px;
+		line-height:normal;
+	}
+    .bs-mo section .box .imfor .product div p{
+        padding-top: 5px;
+        cursor: pointer;
+        height:36px;
+        line-height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+	.bs-mo section .box .imfor .product a img{
+		margin-right:5px;
+	}
+	/*第5,7列*/
+    .bs-mo section .box .imfor .num, 
+	.bs-mo section .box div.time, 
+	.bs-mo section .box div.price, 
+	.bs-mo section .box div.state,
+	.bs-mo section .box div.manipulate,
+	.bs-mo section .box div.receiver{
+		padding-top:100px;
+	}

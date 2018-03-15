@@ -1,0 +1,62 @@
+/*尾部整体*/
+.bs-ft #foot{
+	/*width:100%;*/
+	border-top:2px solid #FF2832;
+	height:200px;
+	margin:30px auto 0;
+	/*background:#FAFAFA;*/
+	box-sizing:border-box;
+	padding-top:20px;
+	/*border:1px solid red;*/
+	overflow:hidden;
+	min-width:320px;
+}
+/*顶部*/
+.bs-ft #foot>div{
+	/*width:1000px;*/
+	margin:0 auto;
+	max-width:85%;
+}
+.bs-ft #foot dl{
+	display:flex;
+	justify-content:space-between;
+}
+.bs-ft #foot dl dd{
+	width:158px;
+	height:70px;
+}
+.bs-ft #foot dl span{
+	width:83px;
+	font-size:1.8em;
+	color:#FF2832;
+	float:right;
+}
+.bs-ft #foot dl img{
+	float:left;
+}
+/*底部*/
+@media (min-width: 10px) {
+	.bs-ft #foot p{
+		height:100px;
+		background:#fff;
+		/*width:100%;*/
+		text-align:center;
+		padding-top:0;
+		color:#8A7575;
+		/*border:1px solid red;*/
+	}
+}
+@media (min-width: 600px) {
+	.bs-ft #foot p{
+		height:100px;
+		background:#fff;
+		/*width:100%;*/
+		text-align:center;
+		padding-top:30px;
+		color:#8A7575;
+		/*border:1px solid red;*/
+	}
+}
+.bs-ft #foot p img{
+	margin:0 10px;
+}

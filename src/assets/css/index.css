@@ -1,0 +1,264 @@
+
+
+/*顶部*/
+	.bs-ix #container{
+		display:flex;
+		max-width:1200px;
+		/*width:100%;*/
+		/*overflow: hidden;*/
+		box-sizing: border-box;
+		/*border:1px solid green;*/
+		justify-content:center;
+	}
+/*分类*/
+	.bs-ix #container .classify{
+		width:195px;
+		height:640px;
+		border:1px solid #487a6f;
+		border-radius:3px;
+		overflow:hidden;
+		padding: 0!important;
+		margin-right:25px;
+	}
+/*广告*/
+    .bs-ix #container .advert{
+		max-width:980px;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+/*底部公共*/
+	.bs-ix .h2{
+		text-align:center;
+		color:#333;
+		font-weight:bold;
+		font-family:"microsoft yahei";
+		display:block;
+		/*font-size:18px;*/
+		font-size:1.8em;
+		cursor:pointer;
+	}
+	.bs-ix .h2:hover{
+		text-align:center;
+		color:#487a6f;
+	}
+/*为您推荐/图书畅销排行榜/图书新品排行榜*/
+	.bs-ix .commonstyle{
+		/*width:1050px;*/
+		width:90%;
+		min-width:380px;
+		margin:30px auto;
+		max-height:622px;
+		overflow: hidden;
+		/*border:1px solid red;*/
+	}
+	.bs-ix .commonstyle p{
+		border-bottom:1px solid #b0a2a2;
+		padding-bottom:6px;
+	}
+	.bs-ix .commonstyle p span{
+		/*font-size:14px;*/
+		font-size:1.4em;
+		display:inline-block;
+		margin-right:10px;
+		padding-bottom:6px;
+		cursor:pointer;
+		position:relative;
+		top:7px;
+	}
+	.bs-ix #selling p a{
+		position:relative;
+		top:7px;
+	}
+	.bs-ix .commonstyle .selected{
+		border-bottom:2px solid #fe4902;
+		color:#fe4902;
+	}
+	.bs-ix .commonstyle section{
+		height:513px;
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+		margin-top:30px;
+	}
+	.bs-ix .commonstyle section>div{
+		width:175px;
+		margin-bottom:20px;
+		display:flex;
+		justify-content:space-between;
+		flex-direction:column;
+		height:240px;
+		padding-left:10px;
+		/*border:1px solid red;*/
+	}
+	.bs-ix .commonstyle section>div img{
+		width:115px;
+		/*margin-left:12px;*/
+	}
+	.bs-ix .commonstyle section>div span.price{
+		color:#fe4902;
+		/*font-size:14px;*/
+		font-size:1.4em;
+		font-weight:bold;
+	}
+	.bs-ix .commonstyle section>div span,.commonstyle section>div a{
+		margin:0 auto;
+		/*border:1px solid red;*/
+	}
+	.bs-ix .commonstyle section>div a:nth-child(2){
+		height:14px;
+		overflow:hidden;
+	}
+	.bs-ix .commonstyle section>div a:nth-child(2):hover{
+		height:28px;
+	}
+/*热门分类*/
+	.bs-ix #hotcategories>div{
+		max-width:826px;
+		width:90%;
+		height:627px;
+		margin:30px auto;
+		display:flex;
+		flex-wrap:wrap;
+		/*justify-content:space-between;*/
+		justify-content:center;
+		/*align-content:space-between;*/
+		align-content:center;
+		/*min-width:600px;*/
+		min-width:400px;
+		text-align: center;
+		/*border: 1px solid red;*/
+	}
+	.bs-ix #hotcategories>div>div{
+		/*width:410px;*/
+		width:45%;
+		height:205px;
+		background:#f4f4f4;
+		display:flex;
+	}
+	.bs-ix #hotcategories>div>div>a{
+		width:153px;
+		height:153px;
+		border-radius:50%;
+		margin:26px;
+	}
+	.bs-ix #hotcategories>div>div>a.literature{
+		background:#fff url("../img/index/category (2).png") no-repeat center center;
+	}
+	.bs-ix #hotcategories>div>div>a.novel{
+		background:#fff url("../img/index/category (3).png") no-repeat center center;
+	}
+	.bs-ix #hotcategories>div>div>a.juvenile{
+		background:#fff url("../img/index/category (4).png") no-repeat center center;
+	}
+	.bs-ix #hotcategories>div>div>a.history{
+		background:#fff url("../img/index/category (5).png") no-repeat center center;
+	}
+	.bs-ix #hotcategories>div>div>a.social{
+		background:#fff url("../img/index/category (6).png") no-repeat center center;
+	}
+	.bs-ix #hotcategories>div>div>a.enconomy{
+		background:#fff url("../img/index/category (1).png") no-repeat center center;
+	}
+	.bs-ix #hotcategories>div>div>ul{
+		/*padding:43px 0 0 37px;*/
+		padding:43px 10px;
+		width:40%;
+		/*border:1px solid red;*/
+		text-align: left;
+	}
+	.bs-ix #hotcategories>div>div>ul a{
+		color:#636363;
+		display:block;
+		margin-bottom:4px;
+	}
+	.bs-ix #hotcategories>div>div>ul a.title{
+		/*font-size:16px;*/
+		font-size:1.6em;
+		margin-bottom:6px;
+	}
+	.bs-ix #hotcategories>div>div>ul a.foot{
+		padding-top:8px;
+	}
+/*精选图书推荐/今日最好价*/
+	.bs-ix #selectedbooks{
+		/*width:1050px;*/
+		min-width:360px;
+		width:100%;
+		margin:0 auto;
+		/*border:1px solid red;*/
+		max-height:300px;
+		overflow: hidden;
+	}
+	.bs-ix #bestprice{
+		/*width:1050px;*/
+		width:100%;
+		margin:40px auto;
+		max-height:300px;
+		overflow: hidden;
+		min-width:360px;
+	}
+	.bs-ix #selectedbooks>a,#bestprice>a{
+		position:relative;
+		top:-17px;
+	}
+	.bs-ix .autoplays{
+		height:220px;
+		margin:30px auto;
+		/*width:1050px;*/
+		width:100%;
+	}
+	.bs-ix .autoplays dl{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content:center;
+		height:220px;
+		/*border:1px solid red;*/
+	}
+	.bs-ix .autoplays dl dt span{
+		height:34px;
+		cursor:pointer;
+		display:block;
+		padding-top:158px;
+		width:28px;
+	}
+	.bs-ix .autoplays dl dt #pre{
+		background:transparent url("../img/index/arrow_carrot-up1.png") no-repeat center center;
+	}
+	.bs-ix .autoplays dl dt #next{
+		background:transparent url("../img/index/arrow_carrot-up2.png") no-repeat center center;
+	}
+	.bs-ix .autoplays dl dd{
+		padding-left:30px;
+		width:150px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		/*border:1px solid red;*/
+		height:100%;
+	}
+	.bs-ix .autoplays dl dd img{
+		width:105px;
+		margin-bottom:4px;
+		cursor:pointer;
+	}
+	.bs-ix .autoplays dl dd span.price{
+		font-size:1.4em;
+		/*font-size:14px;*/
+		color:#fe4902;
+		font-weight:bold;
+	}
+	.bs-ix .autoplays dl dd span,.bs-ix .autoplays dl dd a{
+		margin:0 auto;
+		/*border:1px solid red;*/
+	}
+	.bs-ix .autoplays dl dd a:nth-child(2){
+		height:14px;
+		/*font-size:1.4em;*/
+		overflow:hidden;
+	}
+	.bs-ix .autoplays dl dd a:nth-child(2):hover{
+		height:28px;
+	}
+	
+	

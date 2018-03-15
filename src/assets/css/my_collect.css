@@ -1,0 +1,103 @@
+/*主体*/
+	.bs-mc section{
+		/*width:1200px;*/
+		width:100%;	
+		margin:0 auto;
+	}
+	/*题头*/
+	.bs-mc .titlep{
+		border-bottom:1px solid #c8c3c3;
+	}
+	.bs-mc .treasure{
+		color:#fe3227;
+		display:inline-block;
+		padding:14px 20px 14px 15px;
+		border-bottom:2px solid #fe3227;
+		position:relative;
+		top:1px;
+	}
+	.bs-mc section #delete{
+		float:right;
+		border:1px solid #c8c3c3;
+		padding:5px 10px;
+		border-radius:5px;
+		margin-right:5px;
+		margin-top:10px;
+		cursor:pointer;
+        display: none;
+	}
+    .bs-mc section #manageA{
+		float:right;
+		border:1px solid #c8c3c3;
+		padding:5px 10px;
+		border-radius:5px;
+		margin-right:5px;
+		margin-top:10px;
+		cursor:pointer;
+	}
+	/*商品列表*/
+	.bs-mc section .prolis{
+		display:flex;
+		flex-wrap:wrap;
+		/*width:1200px;*/
+		width:100%;
+		margin:30px auto;
+	}
+	.bs-mc section .prolis>div{
+		margin-left:40px;
+		width:180px;
+		height:250px;
+		box-sizing:border-box;
+		overflow:hidden;
+		margin-bottom:30px;
+		perspective:150px;
+		border:1px solid #c8c3c3;
+		text-align:center;
+	}
+	.bs-mc section .prolis>div>a img{
+		/*background:url("../img/my_collect/b1.png") no-repeat center center;*/
+		/*background-size:120px 160px;*/
+		padding:10px;
+		width:180px;
+		height:180px;
+		box-sizing:border-box;
+		display:block;
+	}
+	.bs-mc section .prolis>div>div .price span:first-child{
+		color:#fe2832;
+		font-size:16px;
+		margin-right:10px;
+		font-weight:bold;
+		position:relative;
+		top:1px;
+	}
+	.bs-mc section .prolis>div>div .price span:last-child{
+		text-decoration:line-through;
+		position:relative;
+		top:0px;
+	}
+	.bs-mc section .prolis>div>div .title{
+		height:32px;
+		overflow:hidden;
+		line-height:16px;
+		text-align:left;
+		padding-left:5px;
+		margin-bottom:5px;
+		cursor:pointer;
+		display:block;
+		color:#636363;
+	}
+	.bs-mc section .prolis>div>div .title:hover{
+		height:64px;
+	}
+	.bs-mc .mask{
+		background:transparent ;
+		opacity:0;
+		z-index:99;
+		width:180px;
+		height:250px;
+		position:absolute;
+		top:0;
+		left: 0;
+        cursor: pointer;
+	}
